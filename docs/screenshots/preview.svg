@@ -1,0 +1,20 @@
+<svg width="1200" height="720" viewBox="0 0 1200 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="720" fill="#f8efe5"/>
+  <rect x="60" y="60" width="1080" height="600" rx="28" fill="#fffaf4" stroke="#e0dcd5" stroke-width="2"/>
+  <rect x="90" y="100" width="340" height="140" rx="18" fill="#f97316" opacity="0.12"/>
+  <rect x="450" y="100" width="270" height="140" rx="18" fill="#0ea5e9" opacity="0.12"/>
+  <rect x="740" y="100" width="340" height="140" rx="18" fill="#14b8a6" opacity="0.12"/>
+  <rect x="90" y="280" width="990" height="340" rx="22" fill="#ffffff" stroke="#ede7e0" stroke-width="2"/>
+  <rect x="130" y="320" width="280" height="80" rx="14" fill="#f1f2f4"/>
+  <rect x="130" y="420" width="280" height="80" rx="14" fill="#f1f2f4"/>
+  <rect x="130" y="520" width="280" height="80" rx="14" fill="#f1f2f4"/>
+  <rect x="440" y="320" width="280" height="80" rx="14" fill="#f1f2f4"/>
+  <rect x="440" y="420" width="280" height="80" rx="14" fill="#f1f2f4"/>
+  <rect x="440" y="520" width="280" height="80" rx="14" fill="#f1f2f4"/>
+  <rect x="750" y="320" width="280" height="80" rx="14" fill="#f1f2f4"/>
+  <rect x="750" y="420" width="280" height="80" rx="14" fill="#f1f2f4"/>
+  <rect x="750" y="520" width="280" height="80" rx="14" fill="#f1f2f4"/>
+  <text x="120" y="170" font-family="Space Grotesk, Arial, sans-serif" font-size="36" fill="#17212e" font-weight="700">WebQuiz Studio</text>
+  <text x="120" y="210" font-family="Space Grotesk, Arial, sans-serif" font-size="20" fill="#41516b">Screenshot placeholder</text>
+  <text x="120" y="360" font-family="Space Grotesk, Arial, sans-serif" font-size="18" fill="#41516b">Quiz Cards</text>
+</svg>
