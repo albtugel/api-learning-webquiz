@@ -1,0 +1,42 @@
+@baseUrl = http://localhost:8888
+
+### Get quizzes
+GET {{baseUrl}}/quizzes
+
+### Create quiz
+POST {{baseUrl}}/quizzes
+Content-Type: application/json
+
+{
+  "title": "CSS Basics",
+  "text": "Which property changes text color?",
+  "options": ["font-weight", "color", "margin", "display"],
+  "answer": [1]
+}
+
+### Delete quiz
+DELETE {{baseUrl}}/quizzes/q1
+
+### Get completed attempts
+GET {{baseUrl}}/completed
+
+### Create completed attempt
+POST {{baseUrl}}/completed
+Content-Type: application/json
+
+{
+  "quizId": "q1",
+  "user": "user-123@webquiz.local",
+  "date": "2026-04-02T08:00:00.000Z",
+  "isCorrect": true,
+  "answer": 0
+}
+
+### Create user
+POST {{baseUrl}}/users
+Content-Type: application/json
+
+{
+  "email": "user-123@webquiz.local",
+  "password": "secret123"
+}

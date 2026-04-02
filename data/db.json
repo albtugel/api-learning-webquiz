@@ -1,0 +1,82 @@
+{
+  "quizzes": [
+    {
+      "id": "q2",
+      "title": "JavaScript Essentials",
+      "text": "Which method converts JSON into a JavaScript object?",
+      "options": [
+        "JSON.parse()",
+        "JSON.stringify()",
+        "Object.from()",
+        "Array.toJSON()"
+      ],
+      "answer": [
+        0
+      ]
+    }
+  ],
+  "completed": [
+    {
+      "quizId": null,
+      "user": "user-8002@webquiz.local",
+      "date": "2026-04-02T07:27:13.576Z",
+      "isCorrect": true,
+      "answer": 0,
+      "id": "8gQihH-WqTA"
+    },
+    {
+      "quizId": "q2",
+      "user": "user-8002@webquiz.local",
+      "date": "2026-04-02T07:27:14.991Z",
+      "isCorrect": true,
+      "answer": 0,
+      "id": "aep-HyS8ks8"
+    },
+    {
+      "quizId": "q2",
+      "user": "user-8002@webquiz.local",
+      "date": "2026-04-02T07:27:20.292Z",
+      "isCorrect": true,
+      "answer": 0,
+      "id": "VDTi9z48ows"
+    }
+  ],
+  "users": [
+    {
+      "email": "user-9247@webquiz.local",
+      "password": "e5eb36ca",
+      "id": "-zW-Tn5vNkc"
+    },
+    {
+      "email": "user-3242@webquiz.local",
+      "password": "8d9ff7e1",
+      "id": "YXrw0XCCDSg"
+    },
+    {
+      "email": "user-4743@webquiz.local",
+      "password": "ca75fded",
+      "id": "-SxQGwwB4O0"
+    },
+    {
+      "email": "user-9486@webquiz.local",
+      "password": "f6d9c0b0",
+      "id": "OJDMyyzYupQ"
+    },
+    {
+      "email": "user-4623@webquiz.local",
+      "password": "5b220211",
+      "id": "9mSQ_y3YsbA"
+    },
+    {
+      "email": "user-2987@webquiz.local",
+      "password": "f12a0add",
+      "id": "VjJeaBIK8So"
+    },
+    {
+      "email": "user-8002@webquiz.local",
+      "password": "2ef1e845",
+      "id": "pg5GEZxZjGc"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

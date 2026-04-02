@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WebQuiz Studio</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="app-header">
+      <div class="brand">
+        <div class="brand-mark">WQ</div>
+        <div class="brand-text">
+          <h1>WebQuiz Studio</h1>
+          <p>Create, solve, and track bite-sized quizzes.</p>
+        </div>
+      </div>
+      <div class="header-actions">
+        <button class="btn ghost" type="button" data-action="refresh">Refresh</button>
+        <button class="btn ghost" type="button" data-action="register">Create Demo User</button>
+        <button class="btn primary" type="button" data-action="toggle-form">New Quiz</button>
+      </div>
+    </header>
+
+    <section class="status-bar">
+      <button class="chip" type="button" id="mode-chip" data-action="refresh">Checking API...</button>
+      <div class="stat">
+        <span id="quiz-count">0</span>
+        <span class="stat-label">Quizzes</span>
+      </div>
+      <div class="stat">
+        <span id="attempt-count">0</span>
+        <span class="stat-label">Attempts</span>
+      </div>
+      <div class="stat">
+        <span id="user-label">Guest</span>
+        <span class="stat-label">User</span>
+      </div>
+    </section>
+
+    <main class="main">
+      <section class="panel panel-form" id="form-panel" hidden>
+        <div class="panel-header">
+          <h2>Create a Quiz</h2>
+          <p>Minimum two options. Pick the correct answer.</p>
+        </div>
+        <form id="quiz-form" class="quiz-form">
+          <label class="field">
+            <span>Title</span>
+            <input type="text" name="title" placeholder="e.g. JavaScript Basics" required />
+          </label>
+          <label class="field">
+            <span>Question</span>
+            <textarea name="text" rows="3" placeholder="Ask something specific..." required></textarea>
+          </label>
+          <div class="field">
+            <div class="field-row">
+              <span>Options</span>
+              <button class="link" type="button" data-action="add-option">Add option</button>
+            </div>
+            <div class="options-grid" id="options-grid"></div>
+          </div>
+          <label class="field">
+            <span>Correct Answer</span>
+            <select name="answer" id="answer-select" required></select>
+          </label>
+          <div class="form-actions">
+            <button class="btn ghost" type="button" data-action="reset-form">Reset</button>
+            <button class="btn primary" type="submit">Save Quiz</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="panel panel-list">
+        <div class="panel-header">
+          <h2>Available Quizzes</h2>
+          <p>Tap an option to submit an answer.</p>
+        </div>
+        <div class="empty-state" id="empty-state" hidden>
+          <h3>No quizzes yet</h3>
+          <p>Create your first quiz to get started.</p>
+        </div>
+        <div class="quiz-grid" id="quiz-grid"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <details>
+        <summary>Debug Log</summary>
+        <pre id="output">Ready.</pre>
+      </details>
+    </footer>
+  </div>
+  <script src="assets/js/app.js" defer></script>
+</body>
+</html>
